@@ -1,4 +1,4 @@
-# Sample blog 
+# Big data
 
 This is a sample blog using Markdown. Edit this file in order to create your own content. 
 
