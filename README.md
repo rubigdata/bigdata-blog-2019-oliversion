@@ -17,7 +17,7 @@ Running `bin/hadoop jar wc.jar WordCount input output` we have got output of the
 Using `bin/hdfs dfs -get output output` output is copied to docker and to the local filesystem after that using `docker cp 671888f8f041:/opt/docker/hadoop-2.9.2/output/output/part-r-00000 ~`. The result of the WordCount can be inspected using `cat output/output/part-r-00000`. 
 
 
-Mapreduce uses string tokenizer to split text in single words that does not take into account punctuation marks.
+Mapreduce uses string tokenizer to split text in single words that does not take into account punctuation marks. Thus, mappere emits pairs of (word,1), reducer counts occurrences.
 
 
     public static class TokenizerMapper
